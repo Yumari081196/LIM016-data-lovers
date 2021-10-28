@@ -1,0 +1,98 @@
+body{
+  margin: 0%;
+  background-color: white;
+  min-height: 100vh;
+  background-image: url('imagenPortada.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size:72%;
+  font-family: 'Lato', sans-serif;
+}
+
+nav{
+  padding: 1.5% 2.5%;
+  display: flex;
+  align-items: center;
+}
+
+nav img{
+  width: 90%;
+}
+
+.enlaces{
+  font-size: 30px;
+  font-style: normal;
+  margin: 50px 30px;
+  color: black;
+  text-decoration: none;
+}
+
+p{
+  width: 50%;
+  margin: 5%;
+  width: 50%;
+  left: 68px;
+  top: 263px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: black;
+}
+
+
+/*-----CONTENEDOR PELICULAS TOP-----*/
+#peliculasTop{
+  width: 90%;
+  margin: auto;
+  background: rgba(10, 65, 65, 0.8);
+  padding: 20px;
+}
+
+#peliculasTop .contenedorPeliculas{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenedorPeliculas .flechaIzquierda,
+.contenedorPeliculas .flechaDerecha{
+  position: absolute;
+  border: none;
+  font-size: 40px;
+  height: 50%;
+  line-height: 40px;
+  width: 50px;
+  cursor: pointer;
+  background: rgba(236, 236, 236, 0.3);
+  /*filter: brightness(0.9);
+  mix-blend-mode: multiply; para quitar fondo blanco*/
+}
+
+.contenedorPeliculas .flechaIzquierda{
+  left: 0;
+}
+.contenedorPeliculas .flechaDerecha{
+  right: 0;
+}
+
+/*-----CARRUSEL-----*/
+.contenedorCarrusel{
+  width: 100%;
+  padding: 2px 0;
+  overflow: hidden;/*este de aqui oculta la barra*/
+  /*overflow-x: scroll; este de aqui muestra la barra*/
+  scroll-behavior: smooth;
+}
+
+.contenedorCarrusel .carrusel{
+  display: flex;
+}
+
+.contenedorCarrusel .carrusel .peliculaTop{
+  width: 70%;
+  margin: 0px;
+  transition: .3 ease all;
+}
+
+
+
