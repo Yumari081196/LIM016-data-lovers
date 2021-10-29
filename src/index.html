@@ -2,10 +2,101 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Studio Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <main>
+
+      <nav>
+        <a href="#"><img id="logo" src="logoStudioGhibli.png"></a>
+        <a href="#peliculas" class="enlaces">Películas</a>
+        <a href="#estadisticas" class="enlaces">Estadísticas</a>
+      </nav>
+
+      <p> Studio Ghibli, es reconocido por sus películas animadas fascinantes y de culto, como las que componen esta colección.
+      </p>
+
+      <section id="peliculasTop">
+
+        <div class="contenedorPeliculas">
+
+          <button role="button" id="flechaIzquierda" class="flechaIzquierda">
+            <img src="left-arrow-solid-24.svg">
+          </button>
+
+          <div class="contenedorCarrusel">
+            <div class="carrusel">
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/castillo vagabundo.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/onlyYesterday.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/princesaKayuga.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/castilloCielo.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/mononoke.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/totoro.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/viajeChihiro.png"></a>
+              </div>
+              <div class="peliculaTop">
+                <a href="#"><img src="carrusel/luciernagas.png"></a>
+              </div>
+            </div>
+          </div>
+
+          <button role="button" id="flechaDerecha" class="flechaDerecha">
+            <img src="right-arrow-solid-24.svg">
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!--P Á G I N A     P E L Í C U L A S-->
+    <article id="peliculas">
+
+      <!--SECCIÓN BÚSQUEDA & FILTRADO-->
+      <section id="seccionFiltrado">
+          <input type="search" id="buscarPelicula" placeholder="Buscar Película">
+
+          <select class="filtrarPor">
+              <option selected>Filtrar Por</option>
+              <option value="directorHayao" id="hayaoD">Director Hayao</option>
+              <option value="directorIsao" id="isaoD">Director Isao</option>
+              <option value="productorToshio">Productor Toshio</option>
+          </select>
+
+          <select class="ordenarPor">
+              <option selected>Ordenar Por</option>
+              <option value="anioDescendente">Año descendente</option>
+              <option value="anioAscendente">Año ascendente</option>
+              <option value="puntaje">Puntaje</option>
+              <option value="a-to-z">A - Z</option>
+              <option value="z-to-a">Z - A</option>
+          </select>
+        </section>
+
+      </article>
+
+      <div id="div1">La imagen superior se ha agregado dinámicamente.</div>
+
+
+
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
