@@ -145,7 +145,19 @@ Con los hallazgos anteriores, se realizó un nuevo prototipo del card de cada pe
 
 Para las pruebas Unitarias `(tests)`, creamos nuestras propias funciones, así como la configuración necesaria para ejecutar los tests usando el comando `npm test`. Logrando superar la cobertura mínima del **70%** de statements, functions y lines, y un mínimo del **50%** de branches.
 
-## 7. Objetivos de aprendizaje
+##  7. Test de Usabilidad
+
+Definimos los objetivos que llevarían acabo los usuarios en nuestra página y la acción asociada a este fin.
+Para la cual hicimos que dos personas probaran la página y tuvimos algunos hallazgos a tráves de sus comentarios:
+
+- Problemas en el entendimiento de los botones options en Filtrar y Ordenar. Solución: hicimos qu etanto como Filtrar y Ordenar trabajen juntos y el Search trabaja de manera general en la búsqueda de toda slas películas.
+
+- Los colores no seguían al 100% la temática elegida inicialmente. Solución: Eliminamos uno de los colores y uniformizamos la paleta de nuestra temática.
+
+- Para el área de estadísticas nos dieron algunas sugerencias que serían de interés para el usuario.
+
+
+## 8. Objetivos de aprendizaje
 
 ### HTML
 
